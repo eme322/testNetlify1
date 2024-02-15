@@ -305,19 +305,35 @@
 <div id="culture" class="bg-1">
   <div class="container">
     <h3 class="text-center">Culture</h3>
-    <p class="text-center"Honduras, officially known as the Republic of Honduras, is a country located in Central America.
-      It is bordered to the west by Guatemala, to the southwest by El Salvador, to the southeast by Nicaragua,
-      to the south by the Pacific Ocean at the Gulf of Fonseca, and to the north by the Gulf of Honduras, a large inlet of the Caribbean Sea</p>
+    <p class="text-center"Honduras, officially known as the Republic of Honduras, is a country located in Central America. It is bordered to the west by Guatemala, to the southwest by El Salvador, to the southeast by Nicaragua, to the south by the Pacific Ocean at the Gulf of Fonseca, and to the north by the Gulf of Honduras, a large inlet of the Caribbean Sea</p>
     
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="https://i.pinimg.com/originals/d1/e4/17/d1e417382ba518dca1347defe138efdc.jpg" alt="Natural Beuty" width="400" height="300">
           <p><strong>Natural Beuty</strong></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Learn More</button>
+          <button class="btn" onclick="PlayVideo()">Learn More</button> <-- data-toggle="modal" data-target="#myModal">Learn More</button> -->
         </div>
       </div>
-      
+    </div>
+
+    <div id="videoContainer">
+  <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/cS48A56J-J0?autoplay=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script>
+  function playVideo() {
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src += "&autoplay=1";
+    document.getElementById('videoContainer').style.display = 'block';
+  }
+</script>
+
+
+
+
+    
+    
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="https://i0.wp.com/houstonsgotspice.com/wp-content/uploads/2020/02/IMG_4166-scaled.jpg?resize=1152%2C1536&ssl=1" alt="Gastronomy" width="400" height="300">
@@ -337,9 +353,7 @@
   </div>
 
 
-<-- Interface -->
-  
-  <!-- Modal -->
+<-- Interface -->   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -347,8 +361,9 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+          <h4><span class="glyphicon glyphicon-lock"></span> </h4>
         </div>
+        
         <div class="modal-body">
           <form role="form">
             <div class="form-group">
@@ -375,6 +390,9 @@
   </div>
 </div>
 
+
+
+  
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
@@ -405,6 +423,7 @@
     </div>
   </div>
   <br>
+  
   <h3 class="text-center"> Motivation Quotes</h3>  
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
@@ -428,9 +447,13 @@
   </div>
 </div>
 
+  
 <!-- Image of location/map -->
 <img src="map.jpg" class="img-responsive" style="width:100%">
 
+
+
+  
 <!-- Footer -->
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
