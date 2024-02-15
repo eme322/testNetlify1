@@ -317,14 +317,14 @@
       </div>
     </div>
 
-    <div id="videoContainer">
-  <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/cS48A56J-J0?autoplay=0" frameborder="0" allowfullscreen></iframe>
+   <div id="videoContainer">
+  <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <script>
   function playVideo() {
     var videoFrame = document.getElementById('videoFrame');
-    videoFrame.src += "&autoplay=1";
+    videoFrame.src = "https://www.youtube.com/embed/cS48A56J-J0?autoplay=1";
     document.getElementById('videoContainer').style.display = 'block';
   }
 </script>
