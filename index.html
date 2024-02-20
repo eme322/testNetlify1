@@ -8,21 +8,28 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  padding-top: 60px;
 }
 
 .navbar {
   background-color: #333;
   color: white;
   padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
 }
+  .navbar-right {
+  float: right
 
 .background-square {
-  background-color: #f5f5f5;
+  background-color: rgb(77, 166, 255);
   padding: 50px;
 }
 
@@ -50,26 +57,32 @@ body {
 <body>
 
 <div class="navbar">
+  <div class="navbar-brand">
+    Welcome to my personal page - Spring 2024
+  </div>
+  <div class="navbar-right">
   <a href="#">Home</a> |
   <a href="#">About</a> |
   <a href="#">Culture</a> |
   <a href="#">Contact</a>
 </div>
 
-<div class="background-square">
+  <div style="height: 60px;"></div>
+
+<div id="myPage" class="background-square">
   <div class="profile-photo">
     <!-- Replace 'your-photo.jpg' with the path to your personal photo -->
-    <img src="your-photo.jpg" alt="Emely's Photo">
+    <img src="https://drive.google.com/file/d/1IsWgcDtUad9URGmHn4PH1jkVriPINldJ/view?usp=drive_link" alt="Emely's Photo">
   </div>
 </div>
 
-<div class="introduction">
-  <h1>About Me</h1>
+<div id="Introduction" class="introduction">
+  <h1>About</h1>
   <p>
-    Welcome to my personal page! My name is Emely Lopez. I am a passionate individual interested in web development and design. I love to create beautiful and functional websites that leave a lasting impression.
+    Welcome to my personal page! My name is Emely Lopez. I am a Junior at SUNY Oneonta, majoring in Computer Science. With the goal of graduating in May 2025. I was born and raised in Honduras. When I was 17 years old my parents decided to immigrate to the United States. I am the eldest of 3 siblings in total. One of my favorite hobbies is reading and writing and I want to be a Software Engineer 
   </p>
   <p>
-    Feel free to explore my portfolio and contact me if you have any question. I look forward to connecting with you!
+    Feel free to explore my webpage and contact me if you have any question. I look forward to connecting with you!
   </p>
 </div>
 
