@@ -18,6 +18,7 @@
     .cover-photo {
       position: relative;
       margin-bottom: 20px;
+      height: auto;
     }
     .cover-photo img {
       width: 100%;
@@ -25,15 +26,9 @@
     }
     .profile-photo {
       position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px; /* Adjust the size as needed */
-      height: 100px; /* Adjust the size as needed */
-      background-color: #fff; /* Add background color to make it a square */
-      border: 2px solid #fff; /* Add border to make it a square */
-      border-radius: 50%;
-      overflow: hidden;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
     }
     .profile-photo img {
       width: 100%;
