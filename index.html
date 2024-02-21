@@ -13,6 +13,8 @@
   body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
     .cover-photo {
       position: relative;
@@ -25,7 +27,7 @@
       height: auto;
     }
     .profile-photo {
-      position: absolute; <!-- Absolute -->
+      position: absolute;
       float: left;
       top: 180px;
       left: 100px;
@@ -41,7 +43,6 @@
     .profile-photo img {
       width: 100%;
       height: auto;
-
     }
   h3, h4 {
     margin: 10px 0 30px 0;
@@ -64,12 +65,11 @@
   }
    
   @media (max-width: 600px) {
-<!--    .carousel-caption { -->
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    .carousel-caption {
+      display: none;
     }
   }
   .bg-1 {
-    <!--color: #000000;--> 
     color: #bdbdbd;
   }
   .bg-1 h3 {color: #fff;}
@@ -182,18 +182,16 @@
   </div>
 </nav>
 
-    <!-- Wrapper for slides -->
 
 <div class="cover-photo">
   <div class="item active">
-  <img src="https://www.tilelook.com/system/tile_picture/resource/301784/d3d_default_DOR3407A_COVER_NEUTRAL_60X120_02.jpg" alt="Cover Photo" class="img-responsive">
-  <div class="profile-photo">
-    <img src="https://th.bing.com/th/id/OIP.dB4FBfkxjj5suBkcdM_mgAHaHa?rs=1&pid=ImgDetMain" alt="Profile Photo">
+    <img src="https://www.tilelook.com/system/tile_picture/resource/301784/d3d_default_DOR3407A_COVER_NEUTRAL_60X120_02.jpg" alt="Cover Photo" class="img-responsive">
+    <div class="profile-photo">
+      <img src="https://th.bing.com/th/id/OIP.dB4FBfkxjj5suBkcdM_mgAHaHa?rs=1&pid=ImgDetMain" alt="Profile Photo">
+    </div>
   </div>
 </div>
 
-
-<!-- Container (The Robot Section) Introduction -->
 <div id="robot" class="container text-center">
   <h3>Introduction</h3>
   <p> <a href="#" class="link-primary">Primary link</a>
@@ -206,13 +204,10 @@
 <a href="#" class="link-dark">Dark link</a></p>
   <br>
 
-
-<!-- Container (TOUR Section) Culture -->
 <div id="tour" class="bg-1">
   <div class="container">
     <h3 class="text-center">TOUR DATES</h3>
     <p class="text-center">Honduras, officially known as the Republic of Honduras, is a country located in Central America. It is bordered to the west by Guatemala, to the southwest by El Salvador, to the southeast by Nicaragua, to the south by the Pacific Ocean at the Gulf of Fonseca, and to the north by the Gulf of Honduras, a large inlet of the Caribbean Sea</p>
-
     
     <div class="row text-center">
       <div class="col-sm-4">
@@ -240,11 +235,8 @@
     </div>
   </div>
   
-  <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
-      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
@@ -269,13 +261,13 @@
           <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
             <span class="glyphicon glyphicon-remove"></span> Cancel
           </button>
+          <p>Need <a href="#">help?</a></p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
   <p class="text-center">Thank you for exploring my webpage. Contact me if you have any questions. I look forward to connecting with you!</p>
@@ -305,7 +297,7 @@
     </div>
   </div>
   <br>
-  <h3 class="text-center">Media</h3>  
+  <h3 class="text-center">From The Blog</h3>  
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
     <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
@@ -328,35 +320,22 @@
   </div>
 </div>
 
+<img src="map.jpg" alt="Location Map" class="img-responsive" style="width:100%">
 
-<!--Java--> 
 <script>
 $(document).ready(function(){
-  // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
   
-  // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 })
 </script>
