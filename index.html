@@ -273,6 +273,9 @@
   </div>
   <br>
   
+ <div id="contact" class="container">
+  <!-- Previous content -->
+  
   <h3 class="text-center">Ways to find me</h3>  
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
@@ -297,22 +300,28 @@
 </div>
 
 <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-        window.location.hash = hash;
-      });
-    }
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    // Add this script to handle tab toggling
+    $('.nav-tabs a').click(function(){
+      $(this).tab('show');
+    });
   });
-})
 </script>
+
 
 </body>
 </html>
