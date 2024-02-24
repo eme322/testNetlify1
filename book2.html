@@ -1,121 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      Poem Using Tailwind
-    </title>
-    <meta name="description" content="Simple landind page" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.recipe-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+ul, ol {
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+</style>
 
 
-    
-    <style>
-      .gradient {
-        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-      }
-    </style>
-
-    
-  </head>
-  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-    
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
-      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 flex items-center">
-          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            Poem
-          </a>
-        </div>
-        <div class="block lg:hidden pr-4">
-          <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-            </li>
-          </ul>
   
-        </div>
-      </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-    </nav>
-    <!--Hero-->
-    <div class="pt-24">
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <!--Left Col-->
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">What business are you?</p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
-            Main Hero Message to sell yourself!
-          </h1>
-          <p class="leading-normal text-2xl mb-8">
-            Sub-hero message, not too long and not too short. Make it just right!
-          </p>
-
-        </div>
-
-
- 
-
-
-
-    
-
-
-    </script>
-    <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
-
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
-            } else {
-              navMenuDiv.classList.add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            navMenuDiv.classList.add("hidden");
-          }
-        }
-      }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
-    </script>
-  </body>
+<body>
+  <div class="container">
+    <h1>Flan Recipe</h1>
+    <img src="flan.jpg" alt="Flan" class="recipe-img">
+    <h2>Ingredients:</h2>
+    <ul>
+      <li>1 cup sugar</li>
+      <li>5 large eggs</li>
+      <li>1 can (14 ounces) sweetened condensed milk</li>
+      <li>1 can (12 ounces) evaporated milk</li>
+      <li>1 teaspoon vanilla extract</li>
+    </ul>
+    <h2>Instructions:</h2>
+    <ol>
+      <li>Preheat oven to 350°F (175°C).</li>
+      <li>In a small saucepan over medium heat, melt sugar until golden, stirring constantly. Pour into a 9-inch round baking dish, tilting to coat bottom evenly.</li>
+      <li>In a large bowl, beat eggs. Add sweetened condensed milk, evaporated milk, and vanilla; mix until smooth. Strain into prepared baking dish.</li>
+      <li>Place baking dish in a larger baking pan; add 1 inch of hot water to larger pan. Bake for 50-60 minutes or until center is just set.</li>
+      <li>Remove from water bath; cool. Refrigerate for 4 hours or overnight.</li>
+      <li>To unmold, run a knife around edges and invert onto a large rimmed serving platter.</li>
+      <li>Serve slices with caramel sauce if desired. Enjoy!</li>
+    </ol>
+    <h1>Banana Bread Recipe</h1>
+    <img src="banana-bread.jpg" alt="Banana Bread" class="recipe-img">
+    <h2>Ingredients:</h2>
+    <ul>
+      <li>2 cups all-purpose flour</li>
+      <li>1 teaspoon baking soda</li>
+      <li>1/4 teaspoon salt</li>
+      <li>1/2 cup unsalted butter, melted</li>
+      <li>3/4 cup granulated sugar</li>
+      <li>2 large eggs</li>
+      <li>1 teaspoon vanilla extract</li>
+      <li>3 ripe bananas, mashed</li>
+      <li>1/2 cup chopped nuts (optional)</li>
+    </ul>
+    <h2>Instructions:</h2>
+    <ol>
+      <li>Preheat oven to 350°F (175°C). Grease and flour a 9x5 inch loaf pan.</li>
+      <li>In a large bowl, whisk together flour, baking soda, and salt.</li>
+      <li>In another bowl, mix melted butter and sugar. Add eggs and vanilla; beat until smooth.</li>
+      <li>Stir in mashed bananas until well blended.</li>
+      <li>Gradually add flour mixture to banana mixture; stir until just moistened.</li>
+      <li>If desired, fold in chopped nuts.</li>
+      <li>Pour batter into prepared loaf pan. Bake for 60-65 minutes or until a toothpick inserted into center comes out clean.</li>
+      <li>Cool in pan for 10 minutes, then remove from pan and cool completely on wire rack.</li>
+      <li>Slice and serve. Enjoy!</li>
+    </ol>
+  </div>
+</body>
 </html>
