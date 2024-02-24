@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Road Not Taken</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     <script>
       tailwind.config = {
         theme: {
@@ -16,31 +18,79 @@
       } 
     </script>
   </head>
+  <style>
+
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  animation: rotate 6s linear infinite alternate;
+}
+
+.poem {
+  max-width: 600px;
+}
+
+.line {
+  margin: 10px 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  </style>
+
   <body>
-    <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
-
-      <h1 class="text-center text-blue-600 text-3xl mt-5">
-      Intenta crear estos botones
-    </h1>
-    
-    <section class="flex justify-center gap-2 mt-2">
-      <button
-        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-900 transition"
-      >
-        bg-blue-500
-      </button>
-      <button
-        class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-900 transition"
-      >
-        bg-red-500
-      </button>
-      <button
-        class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-900 transition"
-      >
-        bg-orange-500
-      </button>
-    </section>
-
-    
-  </body>
+  <div class="container">
+    <img src="your_photo.jpg" alt="Your Photo" class="photo">
+    <div class="poem">
+      <h1>The Road Not Taken</h1>
+      <p class="line">BY ROBERT FROST</p>
+      <p class="line">Two roads diverged in a yellow wood,</p>
+      <p class="line">And sorry I could not travel both</p>
+      <p class="line">And be one traveler, long I stood</p>
+      <p class="line">And looked down one as far as I could</p>
+      <p class="line">To where it bent in the undergrowth;</p>
+      <p class="line">Then took the other, as just as fair,</p>
+      <p class="line">And having perhaps the better claim,</p>
+      <p class="line">Because it was grassy and wanted wear;</p>
+      <p class="line">Though as for that the passing there</p>
+      <p class="line">Had worn them really about the same,</p>
+      <p class="line">And both that morning equally lay</p>
+      <p class="line">In leaves no step had trodden black.</p>
+      <p class="line">Oh, I kept the first for another day!</p>
+      <p class="line">Yet knowing how way leads on to way,</p>
+      <p class="line">I doubted if I should ever come back.</p>
+      <p class="line">I shall be telling this with a sigh</p>
+      <p class="line">Somewhere ages and ages hence:</p>
+      <p class="line">Two roads diverged in a wood, and I—</p>
+      <p class="line">I took the one less traveled by,</p>
+      <p class="line">And that has made all the difference.</p>
+    </div>
+  </div>
+</body>
 </html>
+    
+
+    
