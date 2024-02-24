@@ -4,67 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Road Not Taken</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
- <!--   <script> -->
-      <!--tailwind.config = {-->
-        <!--theme: {-->
-          <!--extend: {-->
-           <!-- colors: {-->
-             <!-- clifford: "#da373d",-->
-           <!-- }, -->
-   <!-- </script>-->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f0fff0;
+    }
 
-  body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #f0fff0;
-}
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
+    .title {
+      margin-top: 20px; 
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
 
-.title {
-  margin-top: 20px; 
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-.photo {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    .photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
-  .poem {
-  max-width: 600px;
-  margin-bottom: 600px;
-}
+    .poem {
+      max-width: 600px;
+      margin-bottom: 50px; /* Adjusted margin bottom */
+    }
 
-.line {
-  margin: 20px 0;
-  line-height: 10.5;
-  word-spacing: 15px;
-}
+    .line {
+      margin: 20px 0;
+      line-height: 1.5; /* Adjusted line height */
+      word-spacing: 5px; /* Adjusted word spacing */
+    }
   </style>
-
   <body>
-  <div class="container">
-     <h1 class="title">The Road Not Taken</h1>
-    <div class="poem">
-      <p class="line">By Robert Frost</p>
-    </div>
-    <img src="https://rizing.com/wp-content/uploads/2022/04/AdobeStock_417281478.jpeg" alt="two road" class="photo">
-    <div class="poem">
+    <div class="container">
+      <h1 class="title">The Road Not Taken</h1>
+      <div class="poem">
+        <p class="line">By Robert Frost</p>
+        <!-- Your poem lines here -->
+      </div>
+      <img src="https://rizing.com/wp-content/uploads/2022/04/AdobeStock_417281478.jpeg" alt="two road" class="photo">
+      <div class="poem">
       <p class="line">Two roads diverged in a yellow wood,</p>
       <p class="line">And sorry I could not travel both</p>
       <p class="line">And be one traveler, long I stood</p>
@@ -85,9 +78,10 @@
       <p class="line">Two roads diverged in a wood, and I—</p>
       <p class="line">I took the one less traveled by,</p>
       <p class="line">And that has made all the difference.</p>
+
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
     
 
