@@ -9,112 +9,107 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style>
-  body {
-    font: 400 15px/1.8 Arial;
-    color: black;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    letter-spacing: 1px;
+    body {
+      font: 400 15px/1.8 Arial;
+      color: black;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      letter-spacing: 1px;
+    }
 
-  }
     .cover-photo {
       position: relative;
-      height:400px;
+      height: 400px;
       overflow: hidden;
       width: 100%;
     }
+
     .cover-photo img {
-      width: 100%; 
-      height: auto%;
+      width: 100%;
+      height: auto;
     }
+
     .profile-photo {
       position: absolute;
       top: 30%;
       left: 20%;
       z-index: 1;
-      width:200px;
-      height:200px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       border: 2px solid #fff;
       overflow: hidden;
       border: 2px solid #fff;
       transform: translate (-50%, - 50%);
-
     }
+
     .profile-photo img {
       width: 100%;
       height: auto;
     }
-  h3, h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
-    font-size: 20px;
-    text-color: black;
-    font-family: Arial;
-  }
-  .container {
-    padding: 80px 0px;
-    margin: 0 auto;
-    max-width: 1200px; 
-    text-color: black;
-    font-family: Arial;
-    letter-spacing: 1px;
-}
-    
-  .bg-1 {
-    text-color: black; 
-    font-family: Arial;
-    letter-spacing: 1px;
-    
-  }
-  .bg-1 h3 {color: black;}
-    font-family: Arial;
-    letter-spacing: 1px;
-    
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .nav-tabs li a {
-    color: #777;
-  }  
-  .navbar {
-    font-family: Arial;
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-    color: #fff !important;
-  }
-  .navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #29292c !important;
-  }    
-    #contact h3 {
-  line-height: 2;
-    }
-    #culture {
-  margin-bottom: 5px;
-}
-    #contact {
-  margin-top: 10px; 
-}
-    #learn-more {
-  margin-top: 30px;
+
+    h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: black; /* changed from text-color */
+      font-family: Arial;
     }
 
-  
+    .container {
+      padding: 80px 0px;
+      margin: 0 auto;
+      max-width: 1200px;
+      color: black; /* changed from text-color */
+      font-family: Arial;
+      letter-spacing: 1px;
+      text-align: center; /* centered text */
+    }
+
+    .bg-1 {
+      color: black; 
+      font-family: Arial;
+      letter-spacing: 1px;
+    }
+
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .navbar {
+      font-family: Arial;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+      color: #d5d5d5 !important; /* changed from text-color */
+    }
+
+    .navbar-nav li a:hover {
+      color: #fff !important;
+    }
+
+    #Culture {
+      margin-top: 30px; /* increased margin-top */
+    }
+
+    #contact h3 {
+      line-height: 2;
+    }
+
+    #contact {
+      margin-top: 10px; 
+    }
+
+    #learn-more {
+      margin-top: 30px; /* increased margin-top */
+    }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -141,7 +136,6 @@
   </div>
 </nav>
 
-
 <div class="cover-photo">
   <div class="item active">
     <img src="https://www.tilelook.com/system/tile_picture/resource/301784/d3d_default_DOR3407A_COVER_NEUTRAL_60X120_02.jpg" alt="Cover Photo" class="img-responsive">
@@ -151,24 +145,23 @@
   </div>
 </div>
 
-  
 <div id="Introduction" class="container text-center">
   <h3>Introduction</h3>
   <p>My name is Emely Lopez. I am a Junior at SUNY Oneonta, majoring in Computer Science. With the goal of graduating in May 2025. I was born and raised in Honduras. When I was 17 years old my parents decided to immigrate to the United States. I am the eldest of 3 siblings. One of my favorite hobbies is reading and writing and I want to be a Software Engineer.</p>
 
-  
-  <div id="learn-more" class="text-center>
-  <h2 class="text-center">Learn more about me</h2>
-  <p><a href="https://emelylopez.netlify.app/book1.html">My favorite poem</a></p>
-  <p><a href="https://emelylopez.netlify.app/book2.html">The Two Dessert Recipes That I Can Make</a></p>
-  
-<div id="Culture" class="bg-1" style="margin-top: 30px;">   
+  <div id="learn-more">
+    <h3>Learn more about me</h3>
+    <p><a href="https://emelylopez.netlify.app/book1.html">My favorite poem</a></p>
+    <p><a href="https://emelylopez.netlify.app/book2.html">The Two Dessert Recipes That I Can Make</a></p>
+  </div>
+</div>
+
+<div id="Culture" class="bg-1">   
   <div class="container">
     <h3 class="text-center">Culture </h3>
     <p class="text-center">Honduras, officially known as the Republic of Honduras, is a country located in Central America. It is bordered to the west by Guatemala, to the southwest by El Salvador, to the southeast by Nicaragua, to the south by the Pacific Ocean at the Gulf of Fonseca, and to the north by the Gulf of Honduras, a large inlet of the Caribbean Sea.</p>
-     <p class="text-center" style="margin-bottom: 40px;">
 
-      
+    <div class="row">
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="https://images.squarespace-cdn.com/content/v1/5e4345544ea62a092ccd8cd7/1582600363627-592ZXR5I2N77E6DEUP63/Roatan%2BIsland" alt="Tourism" width="450" height="350">
@@ -180,30 +173,29 @@
         <div class="thumbnail">
           <img src="https://nomadparadise.com/wp-content/uploads/2021/07/honduras-food-14-1024x683.jpg" alt="Gastronomy" width="400" height="300">
           <p><strong>Gastronomy</strong></p>
-           <a href="https://www.chefspencil.com/popular-foods-honduras/" target="_blank"><button>Learn More</button></a>
+          <a href="https://www.chefspencil.com/popular-foods-honduras/" target="_blank"><button>Learn More</button></a>
         </div>
       </div>
-      
       <div class="col-sm-4">
         <div class="thumbnail">
           <img src="https://toplist.info/images/800px/music-901629.jpg" alt="Music" width="400" height="300">
           <p><strong>Music</strong></p>
-           <a href="https://www.youtube.com/watch?v=cS48A56J-J0&t=262" target="_blank"><button>Learn More</button></a>
+          <a href="https://www.youtube.com/watch?v=cS48A56J-J0&t=262" target="_blank"><button>Learn More</button></a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  
-<div id="contact">                        <!--<div id="contact" class="container">-->
+<div id="contact" class="container"> <!-- added closing div tag -->
   <h3 class="text-center">Contact</h3>
   <p class="text-center">Thank you for exploring my webpage. Contact me if you have any questions. I look forward to connecting with you!</p>
 
   <div class="row">
     <div class="col-md-4">
       <p class="text-center" style="margin-bottom: 20px;">
-      <p><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.com/maps/place/New+York,+NY/@40.6970193,-74.30933,10z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu">NY, US</a></p>
-      <!--<p><span class="glyphicon glyphicon-map-marker"></span>New York, US</p>-->
+        <span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.com/maps/place/New+York,+NY/@40.6970193,-74.30933,10z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu">NY, US</a>
+      </p>
       <p><span class="glyphicon glyphicon-phone"></span>Phone: 347-833-1464</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: lopee414@oneonta.edu</p>
     </div>
@@ -225,19 +217,21 @@
       </div>
     </div>
   </div>
-  <br>
+</div>
 
-  
-  <h3 class="text-center">Motivational Quote</h3>  
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Robert Kiyosaki</a></li>
-  </ul>
+<h3 class="text-center">Motivational Quote</h3>  
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Robert Kiyosaki</a></li>
+</ul>
 
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <p>"The size of your success is measured by the strength of your desire; the size of your dream; and how you handle disappointment along the way."</p>
-      <p>By Robert Kiyosaki</p>
-    </div>
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <p>"The size of your success is measured by the strength of your desire; the size of your dream; and how you handle disappointment along the way."</p>
+    <p>By Robert Kiyosaki</p>
+  </div>
+</div>
+
+<script
 
 
 
